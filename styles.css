@@ -1,0 +1,137 @@
+:root{
+    --claro: rgb(170, 255, 247);
+    --oscuro: rgb(59, 59, 59);
+    --violeta: rgb(135, 40, 243);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#000,rgb(52, 4, 129));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container{
+    background-color: var(--claro);
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.dark-btn{
+    width: 100%;
+    text-align: right;
+}
+
+.dark-btn i{
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(92, 92, 255),rgb(50, 50, 255));
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.dark-btn i:hover{
+    transform: scale(1.1);
+}
+
+.display{
+    margin: 10px auto;
+    width: 90%;
+    min-height: 60px;
+    background-color: rgb(48, 255, 48);
+    padding: 20px;
+    box-shadow: 0 0 4px #000;
+    overflow: auto;
+}
+
+.botonera{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(220, 250, 255);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.botonera button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 6px #000;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.botonera button:hover{
+    transform: scale(1.1);
+}
+
+.signo{
+    background-color: #ffa4ff;
+}
+
+.sub-botonera{
+    width: 100%;
+    display: flex;
+}
+
+.sub-botonera div{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sub-botonera div button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+}
+
+.sub-botonera .igual{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sub-botonera .igual button{
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 158, 68);
+    color: #fff;
+}
+
+.numero{
+    background-color: var(--violeta);
+    color: #fff;
+}
+
+
+/* para javascript */
+.oscuro{
+    background-color: #046fe9;
+}
+
+.oscuro-botonera{
+    background-color: #247bff
+}
